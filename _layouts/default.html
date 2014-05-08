@@ -9,24 +9,28 @@
 
 <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
 <link href="{{site.baseurl}}/css/mffc.css" rel="stylesheet">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 </head>
 <body>
 <div class="container">
 <div class="row logo_row">
   <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-3 warning">
-    <a href="{{site.baseurl}}">
+    <a href="/">
       <div class="row">
         <div class="col-xs-2 col-sm-2 col-md-3 logo"></div>
         <div class="col-sm-8 col-xs-7 col-md-6 text-center white_frame"><h1><b>{{ t.[page.lang].logo.name }}</b></h1><h4><i>{{ t.[page.lang].logo.slogan }}</i></h4></div>
         <div class="col-xs-2 col-sm-2 col-md-3 "></div>
         <div class="btn-group btn-group-sm">
+          <!--
           {% if page.lang == 'zh-hk' %}
           <a href="{{site.baseurl}}/en{{page.url}}" class="btn btn-success">En</a>
           {% endif %}
           {% if page.lang == 'en' %}
           <a href="{{site.baseurl}}{{page.url | replace: '/en', ''}}" class="btn btn-success">中</a>
           {% endif %}
-        </div>
+          -->
+          </div>
           </div>
         </a>
       </div>
@@ -38,8 +42,15 @@
 {% include headernav %}
 {{ content }}
 
-<script src="http://code.jquery.com/jquery.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+            ga('create', 'UA-50206332-3', 'mffc.org.au');
+              ga('send', 'pageview');
+
+</script>
 </body>
 </html>

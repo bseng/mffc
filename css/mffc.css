@@ -9,12 +9,16 @@ body{
   font-family: "Microsoft JhengHei", "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif
 }
 
+.panel-body { font-size: 150%;}
+p { font-size: 150%;}
+li { font-size: 130%;}
+
 .center_row{
   min-height: 30em;
 }
 .navbar-nav{
   float: none;
-  width: 45em;
+  width: 55em;
   margin: 0px auto;
 }
 
